@@ -1,0 +1,100 @@
+.weatherapp {
+  margin: 10px 0 20px 0;
+
+  border-radius: 30px;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgb(245, 245, 245) 0%,
+    rgba(175, 175, 175) 94%
+  );
+}
+#searchcity {
+  border-radius: 50px;
+  padding: 5px;
+}
+
+#currentlocation {
+  border-radius: 50px;
+  padding: 5px;
+}
+
+#temp-display {
+  color: #ff3366;
+  font-size: 150px;
+  font-family: "Abel", sans-serif;
+}
+#celsius,
+#fahrenheit {
+  color: #ff3366;
+  font-size: 30px;
+  padding: 5px;
+}
+.currentday {
+  text-align: center;
+
+  padding: 0 0 70px 0;
+  margin: 10px 0 20px 0;
+  border-radius: 20px 20px 10px 10px;
+}
+
+.city,
+.currentDate {
+  color: #ff3366;
+  font-family: "Abel", sans-serif;
+  font-size: 38px;
+}
+.weatherinfo {
+  color: #ff3366;
+  font-family: "Abel", sans-serif;
+  font-size: 55px;
+}
+
+.nextdays {
+  text-align: center;
+  padding: 15px 20px;
+  margin: 0;
+  border: solid 3px #d4d7dd;
+  border-radius: 5px 5px 30px 30px;
+}
+
+input {
+  background-color: transparent;
+  position: static;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+}
+
+.week {
+  font-family: "Abel", sans-serif;
+  font-size: 35px;
+
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 51, 102, 1) 0%,
+    rgba(255, 161, 185, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.searchglass {
+  width: 10%;
+}
+p {
+  font-family: "Abel", sans-serif;
+}
+
+img {
+  width: 50%;
+}
+
+.smallpic {
+  width: 30%;
+}
+.unit {
+  position: relative;
+  font-size: 28px;
+  top: -85px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather app</title>
+</head>
+<div class="container">
+
+    <body>
+<div class="container">
+    <div class="weatherapp">
+        <div class="currentday">
+            <form class="citysearch" id="citysearch">
+                <input type="search" placeholder="Enter a city" id="search-text-input" autocomplete="off" />
+                <button id="searchcity"> 🔍</button>
+                <button id="currentlocation"> 📍</button>
+            </form>
+            <img src="https://i.ibb.co/dM7Wd27/rain.png" alt="rain" border="0">
+            <p class="weatherinfo">
+                Rainy
+            </p>
+            <div class="degres" id="temp-display">
+                18
+                <span class="unit">ºC | F</span>
+            </div>
+
+
+            <p class="city">
+                Lisbon,
+            </p>
+            <p class="currentDate">
+                01/11/2019
+            </p>
+
+        </div>
+
+        <br />
+
+        <div class="nextdays">
+            <div class="row">
+                <div class="col-sm">
+                    <p class="week">Sunday</p>
+                </div>
+                <div class="col-sm">
+                    18ºC
+                </div>
+                <div class="col-sm">
+                    <img src="https://i.ibb.co/CQzWQjy/eclair.png" alt="eclair" class="smallpic">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <p class="week">Monday</p>
+                </div>
+                <div class="col-sm">
+                    18ºC
+                </div>
+                <div class="col-sm">
+                    <img src="https://i.ibb.co/yfR5Hw8/soleil.png" alt="soleil" class="smallpic"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <p class="week">Tuesday</p>
+                </div>
+                <div class="col-sm">
+                    18ºC
+                </div>
+                <div class="col-sm">
+                    <img src="https://i.ibb.co/ky00DGg/soleil-cache.png" alt="soleil-cache" class="smallpic">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <p class="week">Wednesday</p>
+                </div>
+                <div class="col-sm">
+                    18ºC
+                </div>
+                <div class="col-sm">
+                    <img src="https://i.ibb.co/BtzF1Q2/vent.png" alt="vent" class="smallpic">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+
+                    <p class="week">Thursday</p>
+
+                </div>
+                <div class="col-sm">
+                    18ºC
+                </div>
+                <div class="col-sm">
+                    <a href="https://ibb.co/vD1Dszx"><img src="https://i.ibb.co/vD1Dszx/brume.png" alt="brume"
+                            class="smallpic"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="src/script.js"></script>
+</div>
+</div>
+</div>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 let now = new Date();
-let currentDate = document.querySelector(".currentDate");
+let currentDate = document.querySelector("#currentdate");
 let currentDay = now.getDate();
 let months = [
   "January",
@@ -27,7 +27,7 @@ function showTemperature(response) {
   let weatherDescription = document.querySelector(".weatherinfo");
   let description = response.data.weather[0].description;
   weatherDescription.innerHTML = `${description}`;
-  let citySearched = document.querySelector(".city");
+  let citySearched = document.querySelector("#city");
 
   citySearched.innerHTML = response.data.name;
 }

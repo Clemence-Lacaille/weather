@@ -43,6 +43,7 @@
   color: #ff3366;
   font-family: "Abel", sans-serif;
   font-size: 38px;
+  text-align: center;
 }
 .weatherinfo {
   color: #ff3366;
@@ -97,4 +98,16 @@ img {
   position: relative;
   font-size: 28px;
   top: -85px;
+}
+
+#precipitation {
+  color: #ff3366;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+}
+
+#wind {
+  color: #ff3366;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
 }

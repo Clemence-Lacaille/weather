@@ -50,6 +50,9 @@
   font-family: "Abel", sans-serif;
   font-size: 55px;
 }
+.weatherinfo::first-letter {
+  text-transform: capitalize;
+}
 
 .nextdays {
   text-align: center;
@@ -95,9 +98,8 @@ img {
   width: 30%;
 }
 #units {
-  position: relative;
   font-size: 28px;
-  top: -85px;
+  color: #ff3366;
 }
 
 #detailstemp {

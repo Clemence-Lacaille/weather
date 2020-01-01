@@ -21,13 +21,7 @@ let currentYear = now.getFullYear();
 currentDate.innerHTML = `${currentMonth}, ${currentDay}th ${currentYear}`;
 
 function displayTemperature(response) {
-  console.log(response.data.main.temp);
-  let temperatureElement = document.querySelector("#temp-display");
-  temperatureElement.innerHTML = response.data.main.temp;
-}
-
-function displayTemperature(response) {
-  let cityElement = document.querySelector(".city");
+  let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#temp-display");
   let descriptionElement = document.querySelector(".weatherinfo");
   let humidityElement = document.querySelector("#humidity");
@@ -48,7 +42,7 @@ function displayTemperature(response) {
 function search(city) {
   let apiKey = "702a27453c60ab3e15c6101724f06473";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
-  const axios = require("axios");
+
   axios.get(apiUrl).then(displayTemperature);
 }
 
@@ -58,20 +52,7 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function changeToFahrenheit(event) {
-  event.preventDefault();
-
-  let temperatureElement = document.querySelector("#temp-display");
-  let fahrenheitTemperature = (temperatureElement.innerHTML * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-let celsiusTemperature = null;
-
 let form = document.querySelector("#citysearch");
 form.addEventListener("submit", handleSubmit);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", changeToFahrenheit);
 
 search("New Orleans");

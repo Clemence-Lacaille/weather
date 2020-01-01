@@ -22,21 +22,24 @@
                 <button id="searchcity"> 🔍</button>
                 <button id="currentlocation"> 📍</button>
             </form>
-            <img src="https://i.ibb.co/dM7Wd27/rain.png" alt="rain" border="0">
+            <img src="https://i.ibb.co/dM7Wd27/rain.png" alt="rain" id="weather-icon">
             <p class="weatherinfo">
                 Rainy
             </p>
             <div class="row">
-            <div class="col-8">
-                <p id="temp-display"></p>
-                <span class="unit" id='units'>ºC | F</span>
+            <div class="col-6">
+                <p id="temp-display">18</p>
+
+          
+            </div>
+            <div class="col-2">
+                    <span class="unit" id='units'>ºC | F</span>
             </div>
 
 <div class="col-4" id="detailstemp">
     <ul>
-        <li>Precipitation: 0%</li>
-        <li>Humidity: 75%</li>
-        <li>Wind: 2 km/h</li>
+        <li>Humidity: <span id="humidity"></span>%</li>
+        <li>Wind: <span id="wind"></span> km/h</li>
     </ul>
 </div>
 </div>

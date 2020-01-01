@@ -24,16 +24,18 @@
             </form>
             <img src="https://i.ibb.co/dM7Wd27/rain.png" alt="rain" id="weather-icon">
             <p class="weatherinfo">
-                Rainy
+               
             </p>
             <div class="row">
             <div class="col-6">
-                <p id="temp-display">18</p>
+                <p id="temp-display"></p>
 
           
             </div>
             <div class="col-2">
-                    <span class="unit" id='units'>ºC | F</span>
+                        <span class="unit" id="units">
+                            <a href="#" id="celsius-link" class="active">ºC</a> | 
+                            <a href="#" id="fahrenheit-link">ºF</a></span>
             </div>
 
 <div class="col-4" id="detailstemp">
@@ -43,8 +45,10 @@
     </ul>
 </div>
 </div>
-<div class="row" id='city'>
-   <div class="col-xl">Lisbon</div> 
+<div class="row">s
+   <div class="col-xl">
+    <span id="city"></span>
+   </div> 
 
 </div>
 <div class="row">

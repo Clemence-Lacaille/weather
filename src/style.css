@@ -112,3 +112,12 @@ img {
 li {
   list-style: none;
 }
+
+.weatherapp .active {
+  color: #ff3366;
+  cursor: default;
+}
+
+.weatherapp .active:hover {
+  text-decoration: none;
+}

@@ -91,6 +91,17 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function searchLocation(position) {
+  let apiKey = "702a27453c60ab3e15c6101724f06473";
+  let apiUrlLocation = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrlLocation).then(displayTemperature);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
 function changeToFahrenheit(event) {
   event.preventDefault();
 
@@ -119,5 +130,8 @@ fahrenheitLink.addEventListener("click", changeToFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", changeToCelsius);
+
+let currentLocationElement = document.querySelector("#currentlocation");
+currentLocationElement.addEventListener("click", getCurrentLocation);
 
 search("New Orleans");

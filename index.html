@@ -3,7 +3,6 @@
 
 <head>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <meta charset="UTF-8" />
@@ -28,9 +27,9 @@
                 Rainy
             </p>
             <div class="row">
-            <div class="col-8" id="temp-display">
-                18
-                <span class="unit">ºC | F</span>
+            <div class="col-8">
+                <p id="temp-display"></p>
+                <span class="unit" id='units'>ºC | F</span>
             </div>
 
 <div class="col-4" id="detailstemp">
@@ -117,7 +116,9 @@
             </div>
         </div>
     </div>
-        <script src="src/script.js"></script>
+<small><a href="https://github.com/Clemence-Lacaille/weather">Open source code</a> by Clémence Lacaille</a> </small>
+       
+<script src="src/index.js"></script>
 </div>
 </div>
 </div>

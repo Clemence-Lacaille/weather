@@ -94,7 +94,7 @@ img {
 .smallpic {
   width: 30%;
 }
-.unit {
+#units {
   position: relative;
   font-size: 28px;
   top: -85px;
